@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class SudokuGame extends JFrame {
-    private JTextField[][] grid;
+    private final JTextField[][] grid;
 
     public SudokuGame() {
         super("Sudoku Game");
@@ -90,6 +90,6 @@ class SudokuGame extends JFrame {
 
 public class Main {
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new SudokuGame());
+        SwingUtilities.invokeLater(SudokuGame::new);
     }
 }
