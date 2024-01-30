@@ -14,7 +14,7 @@ class SudokuGame extends JFrame {
     }
 
     private void initializeGrid() {
-        // Initialize the 9x9 grid of text fields
+        // Initializing the 9x9 grid of text fields
         for (int row = 0; row < 9; row++) {
             for (int col = 0; col < 9; col++) {
                 grid[row][col] = new JTextField(1);
@@ -24,7 +24,7 @@ class SudokuGame extends JFrame {
     }
 
     private void initializeUI() {
-        // Set layout manager
+        // Setting layout manager
         setLayout(new GridLayout(9, 9, 2, 2));
 
         // Add text fields to the JFrame
