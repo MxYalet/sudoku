@@ -2,6 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
 
 class SudokuGame extends JFrame {
     private final JTextField[][] grid;
@@ -26,6 +28,8 @@ class SudokuGame extends JFrame {
     private void initializeUI() {
         // Setting layout manager
         setLayout(new GridLayout(9, 9, 2, 2));
+
+
 
         // Add text fields to the JFrame
         for (int row = 0; row < 9; row++) {
