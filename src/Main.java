@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class SudokuGame extends JFrame {
+
     private final JTextField[][] grid;
 
     public SudokuGame() {
